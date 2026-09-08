@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jay Wheeler - Tienda de Ropa</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .bienvenida {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .bienvenida h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .seccion {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .seccion h2 {
+            border-bottom: 3px solid #111;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px #ccc;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .producto h3 {
+            margin: 15px 0 8px;
+        }
+
+        .precio {
+            color: #b8860b;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #111;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .boton:hover {
+            background-color: #b8860b;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JAY WHEELER</h1>
+        <p>Estilo que representa tu esencia</p>
+    </header>
+
+    <nav>
+        <a href="#pantalones">Pantalones</a>
+        <a href="#camisas">Camisas</a>
+        <a href="#zapatos">Zapatos</a>
+    </nav>
+
+    <section class="bienvenida">
+        <h2>Bienvenido a Jay Wheeler</h2>
+        <p>Descubre nuestra colección de ropa y accesorios.</p>
+    </section>
+
+
+    <!-- PANTALONES -->
+
+    <section class="seccion" id="pantalones">
+
+        <h2>👖 Pantalones</h2>
+
+        <div class="catalogo">
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d" alt="Pantalón negro">
+                <h3>Pantalón Negro</h3>
+                <p class="precio">$45.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb" alt="Jeans">
+                <h3>Jeans Clásicos</h3>
+                <p class="precio">$50.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80" alt="Pantalón casual">
+                <h3>Pantalón Casual</h3>
+                <p class="precio">$40.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAMISAS -->
+
+    <section class="seccion" id="camisas">
+
+        <h2>👕 Camisas</h2>
+
+        <div class="catalogo">
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab" alt="Camisa blanca">
+                <h3>Camisa Blanca</h3>
+                <p class="precio">$30.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273" alt="Camisa negra">
+                <h3>Camisa Negra</h3>
+                <p class="precio">$35.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f37f4678" alt="Camisa casual">
+                <h3>Camisa Casual</h3>
+                <p class="precio">$32.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ZAPATOS -->
+
+    <section class="seccion" id="zapatos">
+
+        <h2>👟 Zapatos</h2>
+
+        <div class="catalogo">
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Zapatillas rojas">
+                <h3>Zapatillas Urbanas</h3>
+                <p class="precio">$70.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" alt="Zapatillas blancas">
+                <h3>Zapatillas Blancas</h3>
+                <p class="precio">$65.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3" alt="Zapatos negros">
+                <h3>Zapatos Negros</h3>
+                <p class="precio">$80.00</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <h3>JAY WHEELER</h3>
+        <p>© 2026 Jay Wheeler - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
+
+<footer id="contacto">
+    <h3>JAY WHEELER</h3>
+
+    <p>📞 Teléfono: +593 99 123 4567</p>
+
+    <p>📧 Correo: jaywheeler@tienda.com</p>
+
+    <p>📍 Dirección: Esmeraldas, Ecuador</p>
+
+    <p>🕒 Horario: Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+
+    <br>
+
+    <p>© 2026 Jay Wheeler - Todos los derechos reservados</p>
+</footer>
+
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #222;
+    }
+
+    /* ENCABEZADO */
+    header {
+        background: linear-gradient(135deg, #ff0080, #7928ca);
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
+    header h1 {
+        font-size: 45px;
+        letter-spacing: 4px;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    /* MENÚ */
+    nav {
+        background-color: #111;
+        text-align: center;
+        padding: 18px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 18px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #00ffff;
+    }
+
+    /* BIENVENIDA */
+    .bienvenida {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .bienvenida h2 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    /* SECCIONES */
+    .seccion {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .seccion h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: white;
+    }
+
+    /* PANTALONES */
+    #pantalones {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    /* CAMISAS */
+    #camisas {
+        background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+
+    /* ZAPATOS */
+    #zapatos {
+        background: linear-gradient(135deg, #11998e, #38ef7d);
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .producto {
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        text-align: center;
+        padding-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .producto:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .producto img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .producto h3 {
+        margin: 15px 0 8px;
+    }
+
+    .precio {
+        color: #e60073;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .boton {
+        display: inline-block;
+        background-color: #111;
+        color: white;
+        padding: 11px 25px;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .boton:hover {
+        background-color: #ff0080;
+        transform: scale(1.05);
+    }
+
+    /* CONTACTO */
+    #contacto {
+        background: linear-gradient(135deg, #ff9966, #ff5e62);
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
+    #contacto h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #contacto p {
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+</style>
